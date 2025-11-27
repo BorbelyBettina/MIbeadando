@@ -48,7 +48,7 @@ from diffusers import DiffusionPipeline, DPMSolverMultistepScheduler
 processor = AutoProcessor.from_pretrained("Salesforce/blip-image-captioning-large", use_fast=True)
 model = AutoModelForVision2Seq.from_pretrained("Salesforce/blip-image-captioning-large")
 
-image = Image.open("Images/noveny2.jpg")
+image = Image.open("Images/sunflower.jpg")
 
 # ezzel a prompttal kényszerítjük, hogy fajnevet próbáljon mondani
 prompt = "a photo of a plant species:"
